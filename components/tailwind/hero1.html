@@ -1,0 +1,21 @@
+<!-- Tailwind Hero Component - Modern Style -->
+<section class="bg-gradient-to-r from-{{ primary_color|default('blue') }}-500 to-{{ secondary_color|default('purple') }}-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                {{ hero_title|default('Welcome to Our Platform') }}
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-100">
+                {{ hero_subtitle|default('Build amazing things with our powerful tools') }}
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-white text-{{ primary_color|default('blue') }}-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Get Started
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-{{ primary_color|default('blue') }}-600 transition">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

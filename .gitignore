@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+dist/*.html
+dist/*.css
+dist/*.js
+*.log
+
+# Temporary test files
+test_*.html
+verify_*.html
+temp_*.html
+demo_*.html
+
+# Backup files
+readme_old.md
+*.bak
+*.tmp
+
+# Playwright browsers
+playwright/.local-browsers/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# pyenv
+.python-version

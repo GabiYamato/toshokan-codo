@@ -1,0 +1,100 @@
+<!-- Tailwind Contact Component - Form Style -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {{ contact_title|default('Get In Touch') }}
+            </h2>
+            <p class="text-xl text-gray-600">
+                {{ contact_subtitle|default('We\'d love to hear from you') }}
+            </p>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                            Name
+                        </label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-{{ primary_color|default('blue') }}-500 focus:border-transparent"
+                            placeholder="Your name"
+                        >
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                            Email
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-{{ primary_color|default('blue') }}-500 focus:border-transparent"
+                            placeholder="your@email.com"
+                        >
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+                        Subject
+                    </label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-{{ primary_color|default('blue') }}-500 focus:border-transparent"
+                        placeholder="What's this about?"
+                    >
+                </div>
+                
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                        Message
+                    </label>
+                    <textarea 
+                        id="message" 
+                        name="message"
+                        rows="5"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-{{ primary_color|default('blue') }}-500 focus:border-transparent"
+                        placeholder="Tell us more..."
+                    ></textarea>
+                </div>
+                
+                <div>
+                    <button 
+                        type="submit"
+                        class="w-full bg-{{ primary_color|default('blue') }}-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-{{ primary_color|default('blue') }}-700 transition"
+                    >
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+                <div class="text-{{ primary_color|default('blue') }}-600 text-3xl mb-2">📧</div>
+                <h3 class="font-semibold mb-1">Email</h3>
+                <p class="text-gray-600">{{ contact_email|default('hello@example.com') }}</p>
+            </div>
+            
+            <div>
+                <div class="text-{{ primary_color|default('blue') }}-600 text-3xl mb-2">📱</div>
+                <h3 class="font-semibold mb-1">Phone</h3>
+                <p class="text-gray-600">{{ contact_phone|default('+1 (555) 123-4567') }}</p>
+            </div>
+            
+            <div>
+                <div class="text-{{ primary_color|default('blue') }}-600 text-3xl mb-2">📍</div>
+                <h3 class="font-semibold mb-1">Location</h3>
+                <p class="text-gray-600">{{ contact_location|default('San Francisco, CA') }}</p>
+            </div>
+        </div>
+    </div>
+</section>

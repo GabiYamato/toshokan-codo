@@ -1,0 +1,40 @@
+{
+  "tailwind": {
+    "navbar": [
+      "components/tailwind/nav1.html"
+    ],
+    "hero": [
+      "components/tailwind/hero1.html"
+    ],
+    "features": [
+      "components/tailwind/features1.html"
+    ],
+    "footer": [
+      "components/tailwind/footer1.html"
+    ],
+    "gallery": [
+      "components/tailwind/gallery1.html"
+    ],
+    "contact": [
+      "components/tailwind/contact1.html"
+    ],
+    "testimonials": [
+      "components/tailwind/testimonials1.html"
+    ],
+    "pricing": [
+      "components/tailwind/pricing1.html"
+    ],
+    "about": [
+      "components/tailwind/about1.html"
+    ],
+    "cta": [
+      "components/tailwind/cta1.html"
+    ]
+  },
+  "bootstrap": {
+    "navbar": [],
+    "hero": [],
+    "features": [],
+    "footer": []
+  }
+}

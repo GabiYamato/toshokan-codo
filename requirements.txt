@@ -1,0 +1,17 @@
+# Website Assembler Dependencies
+
+# Templating
+jinja2>=3.1.0
+
+# Visual Validation (to be installed in Checkpoint 5)
+# playwright>=1.40.0
+
+# Web Server (to be used in Checkpoint 7)
+# flask>=3.0.0
+
+# HTML/CSS Processing
+# beautifulsoup4>=4.12.0
+# lxml>=4.9.0
+
+# Utility
+# python-dotenv>=1.0.0

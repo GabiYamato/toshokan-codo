@@ -1,0 +1,33 @@
+<!-- Tailwind Features Component - Card Grid Style -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {{ features_title|default('Our Features') }}
+            </h2>
+            <p class="text-xl text-gray-600">
+                {{ features_subtitle|default('Everything you need to succeed') }}
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                <div class="text-{{ primary_color|default('blue') }}-600 text-4xl mb-4">🚀</div>
+                <h3 class="text-xl font-semibold mb-2">Fast & Efficient</h3>
+                <p class="text-gray-600">Lightning-fast performance that scales with your needs.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                <div class="text-{{ primary_color|default('blue') }}-600 text-4xl mb-4">🔒</div>
+                <h3 class="text-xl font-semibold mb-2">Secure by Default</h3>
+                <p class="text-gray-600">Enterprise-grade security to protect your data.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                <div class="text-{{ primary_color|default('blue') }}-600 text-4xl mb-4">📊</div>
+                <h3 class="text-xl font-semibold mb-2">Analytics & Insights</h3>
+                <p class="text-gray-600">Powerful analytics to track your progress.</p>
+            </div>
+        </div>
+    </div>
+</section>

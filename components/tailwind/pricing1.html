@@ -1,0 +1,108 @@
+<!-- Tailwind Pricing Component - Card Grid Style -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {{ pricing_title|default('Simple Pricing') }}
+            </h2>
+            <p class="text-xl text-gray-600">
+                {{ pricing_subtitle|default('Choose the plan that\'s right for you') }}
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Basic Plan -->
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold mb-2">Basic</h3>
+                <div class="mb-4">
+                    <span class="text-4xl font-bold">$9</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span class="text-gray-700">10 Projects</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span class="text-gray-700">5GB Storage</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span class="text-gray-700">Basic Support</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-gray-400 mr-2">✗</span>
+                        <span class="text-gray-400">Advanced Features</span>
+                    </li>
+                </ul>
+                <button class="w-full border-2 border-{{ primary_color|default('blue') }}-600 text-{{ primary_color|default('blue') }}-600 px-6 py-3 rounded-lg font-semibold hover:bg-{{ primary_color|default('blue') }}-50 transition">
+                    Get Started
+                </button>
+            </div>
+            
+            <!-- Pro Plan (Featured) -->
+            <div class="bg-{{ primary_color|default('blue') }}-600 text-white rounded-lg shadow-xl p-8 transform md:scale-105 relative">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+                    POPULAR
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Pro</h3>
+                <div class="mb-4">
+                    <span class="text-4xl font-bold">$29</span>
+                    <span class="text-{{ primary_color|default('blue') }}-100">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <span class="text-white mr-2">✓</span>
+                        <span>Unlimited Projects</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-white mr-2">✓</span>
+                        <span>50GB Storage</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-white mr-2">✓</span>
+                        <span>Priority Support</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-white mr-2">✓</span>
+                        <span>Advanced Features</span>
+                    </li>
+                </ul>
+                <button class="w-full bg-white text-{{ primary_color|default('blue') }}-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Get Started
+                </button>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+                <div class="mb-4">
+                    <span class="text-4xl font-bold">$99</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span class="text-gray-700">Unlimited Everything</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span class="text-gray-700">500GB Storage</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span class="text-gray-700">24/7 Support</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span class="text-gray-700">Custom Solutions</span>
+                    </li>
+                </ul>
+                <button class="w-full border-2 border-{{ primary_color|default('blue') }}-600 text-{{ primary_color|default('blue') }}-600 px-6 py-3 rounded-lg font-semibold hover:bg-{{ primary_color|default('blue') }}-50 transition">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
